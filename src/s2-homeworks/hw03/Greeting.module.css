@@ -5,15 +5,19 @@
 }
 
 .error {
+    color: red;
+    font-size: 12px;
 }
 
 .input {
+    border: 1px solid gray;
 }
 
 .input:focus {
 }
 
 .errorInput {
+    border: 1px solid red;
 }
 
 .button {
