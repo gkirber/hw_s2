@@ -1,11 +1,31 @@
 .App {
     --header_height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
 .hw {
-
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    margin-bottom: 20px;
 }
 
 .hwTitle {
-
+    font-size: 24px;
+    font-weight: 600;
+    color: #06c;
+    margin-bottom: 16px;
+    text-align: center;
 }
