@@ -8,8 +8,7 @@ type PropsType = {
     handleOpen: () => void
 }
 
-export const Header: FC<PropsType> = ({handleOpen}) => {
-    // hw5-menu изначально отсутствует, при нажатии на бургер - появляется, при повторном нажатии исчезает
+export const Header: FC<PropsType> = ({ handleOpen }) => {
     const location = useLocation()
     const currentPath = location.pathname
 
@@ -21,9 +20,10 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
                 : currentPath === PATH.JUNIOR_PLUS
                     ? 'Junior Plus'
                     : 'Error'
+
     return (
-        <>
-            <div id={'hw5-header'} className={s.header}>
+        <header id={'hw5-header'} className={s.header}>
+            <div className={s.left}>
                 <img
                     src={burgerIcon}
                     id={'hw5-burger-menu'}
@@ -31,8 +31,8 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
                     onClick={handleOpen}
                     alt={'open menu'}
                 />
-                <h1>{pageName}</h1>
             </div>
-        </>
+            <div className={s.right}>{pageName}</div>
+        </header>
     )
 }
