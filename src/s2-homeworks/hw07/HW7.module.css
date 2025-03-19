@@ -1,2 +1,33 @@
 .container {
+    display: flex;
+    align-items: center; /* Вирівнює елементи по центру */
+    gap: 40px; /* Відстань між елементами */
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+}
+
+.infoIcon {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+}
+
+.selectWrapper {
+    display: flex;
+    flex-direction: column; /* Розташовує елементи вертикально */
+    align-items: flex-start; /* Вирівнює текст по лівому краю */
+    width: fit-content; /* Ширина буде рівна SuperSelect */
 }

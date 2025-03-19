@@ -1,11 +1,42 @@
 .spanBlock {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Відступ між іконкою та текстом */
 }
 
 .span {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.span:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .input {
+    font-size: 16px;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.input:focus {
+    border-color: #007bff;
 }
 
 .pen {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.pen:hover {
+    opacity: 0.7;
 }
